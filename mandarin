@@ -1,3 +1,7 @@
+ /* The fonts are Apple's fonts due to hightly compatable with pīnyīn sign.
+  * Most Kaiti fonts are incompatable with pīnyīn above Hanzi and may ending with distortion.
+  * My personal suggestion is you can use Noto Serif SC or TC instead.
+  */
 .kanji-link {
   font-family: "STKaiti";
   font-size: 20px
