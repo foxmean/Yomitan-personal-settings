@@ -1,85 +1,90 @@
 .kanji-link {
-    font-family: "STKaiti";
-    font-size: 20px
- }
- 
- .kanji-glyph {
-   font-family: "STKaiti";
-   font-size: 20px
- }
- 
- ruby {
-    font-family: "STKaiti";
-    font-size: 35px
- }
- 
- .source-text {
-    font-family: "PingFang SC";
-    font-size: 20px
- }
- 
- .gloss-content {
-    font-family: "PingFang SC";
-    font-size: 20px
- }
- 
- .tag-label-content {
-    font-family: "PingFang SC";
-    font-size: 10px
- }
- 
- :root {
-   /* Change this opacity to 0% if you don't want backgrounds to change.
-    * Or increase it if you want them to change more. 
-    */
-   --dict-color-opacity: 100%;
-   --dict-color: var(--tag-dictionary-background-color);
-   --dict-bg-opacity: 0;
- }
- 
- .definition-item {
-   background-color: color-mix(
-     in srgb,
-     var(--dict-color) calc(var(--dict-bg-opacity) * var(--dict-color-opacity)),
-     var(--background-color)
-   );
-   --tag-dictionary-background-color: var(--dict-color);
- }
- 
- /* Chinese Dicts */
- 
- 
- .definition-item[data-dictionary*="CEDICT"] {
-   --dict-color: rgb(84, 153, 199);
-   --dict-bg-opacity: 0.05;
- }
- .definition-item[data-dictionary*="Wenlin ABC"] {
-   --dict-color: rgb(183, 149, 11);
-   --dict-bg-opacity: 0.05;
- }
- 
- .definition-item[data-dictionary^="萌典"] {
-   --dict-color: rgb(175, 122, 197);
-   --dict-bg-opacity: 0.12;
-   --tag-text-color: black;
- }
- 
- .definition-item[data-dictionary="两岸词典"] {
-   --dict-color: rgb(217, 136, 128);
-   --dict-bg-opacity: 0.05;
- }
- 
- .definition-item[data-dictionary="汉语大词典"] {
-   --dict-color: rgb(149, 165, 166);
-   --dict-bg-opacity: 0.05;
- }
- 
- .definition-item[data-dictionary="牛津英汉汉英词典"] {
-   --dict-color: rgb(15, 58, 124);
-   --dict-bg-opacity: 0.05;
- }
- .definition-item[data-dictionary="现代汉语规范词典"] {
-   --dict-color: rgb(232, 25, 15);
-   --dict-bg-opacity: 0.03;
- }
- /* End Dictionary Colorizer */
+  font-family: "STKaiti";
+  font-size: 20px
+}
+
+.kanji-glyph {
+ font-family: "STKaiti";
+ font-size: 20px
+}
+
+ruby {
+  font-family: "STKaiti";
+  font-size: 35px
+}
+
+.source-text {
+  font-family: "PingFang SC";
+  font-size: 20px
+}
+
+.gloss-content {
+  font-family: "PingFang SC";
+  font-size: 20px
+}
+
+.tag-label-content {
+  font-family: "PingFang SC";
+  font-size: 10px
+}
+
+:root {
+ /* Change this opacity to 0% if you don't want backgrounds to change.
+  * Or increase it if you want them to change more. 
+  */
+ --dict-color-opacity: 100%;
+ --dict-color: var(--tag-dictionary-background-color);
+ --dict-bg-opacity: 0;
+}
+
+.definition-item {
+ background-color: color-mix(
+   in srgb,
+   var(--dict-color) calc(var(--dict-bg-opacity) * var(--dict-color-opacity)),
+   var(--background-color)
+ );
+ --tag-dictionary-background-color: var(--dict-color);
+}
+
+/* Chinese Dicts */
+
+
+.definition-item[data-dictionary*="CEDICT"] {
+ --dict-color: rgb(84, 153, 199);
+ --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary*="Wenlin ABC"] {
+ --dict-color: rgb(183, 149, 11);
+ --dict-bg-opacity: 0.05;
+}
+
+.definition-item[data-dictionary^="萌典"] {
+ --dict-color: rgb(175, 122, 197);
+ --dict-bg-opacity: 0.12;
+ --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="两岸词典"] {
+ --dict-color: rgb(217, 136, 128);
+ --dict-bg-opacity: 0.05;
+}
+
+.definition-item[data-dictionary="汉语大词典"] {
+ --dict-color: rgb(149, 165, 166);
+ --dict-bg-opacity: 0.05;
+}
+
+.definition-item[data-dictionary="牛津英汉汉英词典"] {
+ --dict-color: rgb(15, 58, 124);
+ --dict-bg-opacity: 0.05;
+}
+.definition-item[data-dictionary="现代汉语规范词典"] {
+ --dict-color: rgb(232, 25, 15);
+ --dict-bg-opacity: 0.03;
+}
+/* End Dictionary Colorizer */
+
+/* Delete 'Add reading' button' */
+button[title^="Add reading"] {
+ display:none;
+}
