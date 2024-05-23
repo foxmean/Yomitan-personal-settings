@@ -2,119 +2,129 @@
   * Most Kaiti fonts are incompatable with pīnyīn above Hanzi and may ending with distortion.
   * My personal suggestion is you can use Noto Serif SC or TC instead.
   */
-.kanji-link {
-  font-family: "STKaiti";
-  font-size: 20px
-}
-
-.kanji-glyph {
- font-family: "STKaiti";
- font-size: 20px
-}
-
-ruby {
-  font-family: "STKaiti";
-  font-size: 35px
-}
-
-.source-text {
-  font-family: "PingFang SC";
-  font-size: 20px
-}
-
-.gloss-content {
-  font-family: "PingFang SC";
-  font-size: 20px
-}
-
-.tag-label-content {
-  font-family: "PingFang SC";
-  font-size: 10px
-}
-
-:root {
- /* Change this opacity to 0% if you don't want backgrounds to change.
-  * Or increase it if you want them to change more. 
-  */
- --dict-color-opacity: 100%;
- --dict-color: var(--tag-dictionary-background-color);
- --dict-bg-opacity: 0;
-}
-
-.definition-item {
- background-color: color-mix(
-   in srgb,
-   var(--dict-color) calc(var(--dict-bg-opacity) * var(--dict-color-opacity)),
-   var(--background-color)
- );
- --tag-dictionary-background-color: var(--dict-color);
-}
-
-/* Chinese Dicts */
-
-.definition-item[data-dictionary*="Xiandai7"] {
- --dict-color: rgb(203, 42, 37);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary="现代汉语规范词典"] {
- --dict-color: rgb(131, 82, 162);
- --dict-bg-opacity: 0.03;
-}
- 
-.definition-item[data-dictionary^="萌典"] {
- --dict-color: rgb(254, 156, 154);
- --dict-bg-opacity: 0.12; 
-}
- 
-.definition-item[data-dictionary="两岸词典"] {
- --dict-color: rgb(107, 140, 180);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary="DaCidian"] {
- --dict-color: rgb(149, 165, 166);
- --dict-bg-opacity: 0.05;
-} 
-
-.definition-item[data-dictionary*="Wenlin ABC"] {
- --dict-color: rgb(224, 199, 0);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary*="CC-CEDICT"] {
- --dict-color: rgb(76, 102, 164);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary="牛津英汉汉英词典"] {
- --dict-color: rgb(238, 101, 52);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary="Wunan"] {
- --dict-color: rgb(231, 160, 57);
- --dict-bg-opacity: 0.05;
-}
-
-.definition-item[data-dictionary="DrEye"] {
- --dict-color: rgb(135, 202, 198);
- --dict-bg-opacity: 0.05;
- } 
-
-.definition-item[data-dictionary="Dict2U (Zh-Th)"] {
- --dict-color: rgb(153, 0, 0);
- --dict-bg-opacity: 0.05;
- } 
-
-.definition-item[data-dictionary="EDHCC"] {
- --dict-color: rgb(153, 0, 153);
- --dict-bg-opacity: 0.05;
- }
-
-/* End Dictionary Colorizer */
-
-/* Delete 'Add reading' button' */
-button[title^="Add reading"] {
- display:none;
-}
+  .kanji-link {
+    font-family: "STKaiti";
+    font-size: 20px
+  }
+  
+  .kanji-glyph {
+   font-family: "STKaiti";
+   font-size: 20px
+  }
+  
+  ruby {
+    font-family: "STKaiti";
+    font-size: 35px
+  }
+  
+  .source-text {
+    font-family: "PingFang SC";
+    font-size: 20px
+  }
+  
+  .gloss-content {
+    font-family: "PingFang SC";
+    font-size: 20px
+  }
+  
+  .tag-label-content {
+    font-family: "PingFang SC";
+    font-size: 10px
+  }
+  
+  :root {
+   /* Change this opacity to 0% if you don't want backgrounds to change.
+    * Or increase it if you want them to change more. 
+    */
+   --dict-color-opacity: 100%;
+   --dict-color: var(--tag-dictionary-background-color);
+   --dict-bg-opacity: 0;
+  }
+  
+  .definition-item {
+   background-color: color-mix(
+     in srgb,
+     var(--dict-color) calc(var(--dict-bg-opacity) * var(--dict-color-opacity)),
+     var(--background-color)
+   );
+   --tag-dictionary-background-color: var(--dict-color);
+  }
+  
+  /* Chinese Dicts */
+  
+  .definition-item[data-dictionary*="中华成语大词典"] {
+   --dict-color: #854110;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary*="Xiandai7"] {
+   --dict-color: #CB2540;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary="现代汉语规范词典"] {
+   --dict-color: #8352A2;
+   --dict-bg-opacity: 0.03;
+  }
+   
+  .definition-item[data-dictionary^="萌典"] {
+   --dict-color: #FE9C9A;
+   --dict-bg-opacity: 0.12; 
+  }
+  
+  .definition-item[data-dictionary^="zdic"] {
+   --dict-color: #6d4948;
+   --dict-bg-opacity: 0.12; 
+  }
+   
+  .definition-item[data-dictionary="两岸词典"] {
+   --dict-color: #6B8CB4;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary="DaCidian"] {
+   --dict-color: #95A5A6;
+   --dict-bg-opacity: 0.05;
+  } 
+  
+  .definition-item[data-dictionary*="Wenlin ABC"] {
+   --dict-color: #E0C700;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary*="CC-CEDICT"] {
+   --dict-color: #4C66A4;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary="牛津英汉汉英词典"] {
+   --dict-color: #EE6534;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary="Wunan"] {
+   --dict-color: #E7A039;
+   --dict-bg-opacity: 0.05;
+  }
+  
+  .definition-item[data-dictionary="DrEye"] {
+   --dict-color: #87CAC6;
+   --dict-bg-opacity: 0.05;
+   } 
+  
+  .definition-item[data-dictionary="Dict2U (Zh-Th)"] {
+   --dict-color: #990000;
+   --dict-bg-opacity: 0.05;
+   } 
+  
+  .definition-item[data-dictionary="EDHCC"] {
+   --dict-color: #990099;
+   --dict-bg-opacity: 0.05;
+   }
+  
+  /* End Dictionary Colorizer */
+  
+  /* Delete 'Add reading' button' */
+  button[title^="Add reading"] {
+   display:none;
+  }
