@@ -128,3 +128,8 @@
   button[title^="Add reading"] {
    display:none;
   }
+
+  /* Delete dot line below the headword */
+  .headword-kanji-link {
+    border-bottom: none !important;
+  }
