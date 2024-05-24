@@ -1,6 +1,6 @@
 # Mandarin dictionaries
 
-Dictionaries file: https://small.fileditchstuff.me/s11/qghCUNcNQULocqTTJRo.zip
+Dictionaries file: https://big.fileditchstuff.me/b34/npUBQzZBLsbOdgjuLOZz.json
 
 # How to import
 1. Download file
